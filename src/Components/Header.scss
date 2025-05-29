@@ -1,0 +1,28 @@
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+
+	.logo {
+
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+		font-size: 24px;
+
+		.item {
+			cursor: pointer;
+			color: black;
+			text-decoration: none;
+
+			&.active {
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,13 +1,14 @@
 import {createBrowserRouter, RouterProvider} from "react-router";
-import App from "./App.jsx";
+import Index from "./Pages/Index.jsx";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App />,
+        element: <Index />,
+        children: [],
     },
 ]);
 
 export default function Router() {
-    return <RouterProvider router={router} />
+    return <RouterProvider router={router} />;
 }
