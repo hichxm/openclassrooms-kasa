@@ -1,6 +1,6 @@
 import Header from "./Header.jsx";
 import './Layout.scss'
-import Logo from './../assets/logo_white.svg'
+import Footer from "./Footer.jsx";
 
 export default function Layout({children}) {
     return <>
@@ -10,9 +10,6 @@ export default function Layout({children}) {
                 {children}
             </div>
         </div>
-        <div className="footer">
-            <img src={Logo} alt="Kasa logo"/>
-            <span className="copyright">© 2020 Kasa. All rights reserved</span>
-        </div>
+        <Footer />
     </>
 }

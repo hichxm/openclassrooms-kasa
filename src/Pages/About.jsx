@@ -6,6 +6,5 @@ import AboutBanner from "../assets/about_banner.png";
 export default function About() {
     return <Layout>
         <Banner backgroundImg={AboutBanner} />
-
     </Layout>
 }

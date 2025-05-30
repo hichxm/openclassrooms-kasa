@@ -3,7 +3,7 @@ import Logo from './../assets/logo.svg'
 import {NavLink} from "react-router";
 
 export default function Header() {
-    return <div className="header">
+    return <header className="header">
         <NavLink to="/" className="logo">
             <img className="image" src={Logo} alt="Kasa logo"/>
         </NavLink>
@@ -12,5 +12,5 @@ export default function Header() {
             <NavLink className="item" to="/">Accueil</NavLink>
             <NavLink className="item" to="/about">A Propos</NavLink>
         </div>
-    </div>;
+    </header>;
 }
