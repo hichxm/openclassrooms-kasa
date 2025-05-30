@@ -16,7 +16,7 @@ export default function Index() {
         <div className="all-thumb">
             {apartments.map(apartment => <NavLink
                 key={"apartment-" + apartment.id}
-                to={generatePath('/apartment/:id/:name', {
+                to={generatePath('/apartment/:id', {
                     id: apartment.id,
                     name: apartment.title.toLowerCase().replace(/ /g, '-')
                 })}>
