@@ -1,0 +1,8 @@
+.all-thumb {
+	background-color: #F6F6F6;
+	padding: 4rem;
+	display: grid;
+	gap: 2rem;
+	border-radius: 25px;
+	grid-template-columns: repeat(3, 1fr);
+}
