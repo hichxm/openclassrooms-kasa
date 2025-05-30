@@ -4,17 +4,14 @@ import Layout from "../Components/Layout.jsx";
 import Thumb from "../Components/Thumb.jsx";
 
 import './Index.scss';
-import Banner from './../assets/index_banner.png';
+import BannerImg from './../assets/index_banner.png';
+import Banner from "../Components/Banner.jsx";
 
 export default function Index() {
     const {apartments} = useLoaderData();
 
     return <Layout>
-        <div className="banner">
-            <div className="dark-background"></div>
-            <h1 className="title">Chez vous, partout et ailleurs</h1>
-            <img className="image" src={Banner} alt=""/>
-        </div>
+        <Banner backgroundImg={BannerImg} title="Chez vous, partout et ailleurs" />
 
         <div className="all-thumb">
             {apartments.map(apartment => <NavLink

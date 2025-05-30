@@ -1,7 +1,7 @@
 import {useLoaderData} from "react-router";
 
 import Layout from "../Components/Layout.jsx";
-import './Apartement.scss';
+import './Apartment.scss';
 
 export default function Apartment() {
     const {apartment} = useLoaderData();

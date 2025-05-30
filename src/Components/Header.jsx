@@ -10,7 +10,7 @@ export default function Header() {
 
         <div className="menu">
             <NavLink className="item" to="/">Accueil</NavLink>
-            <a className="item" href="#">A Propos</a>
+            <NavLink className="item" to="/about">A Propos</NavLink>
         </div>
     </div>;
 }
