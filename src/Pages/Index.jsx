@@ -1,4 +1,4 @@
-import {NavLink, useLoaderData} from "react-router";
+import {generatePath, NavLink, useLoaderData} from "react-router";
 
 import Layout from "../Components/Layout.jsx";
 import Thumb from "../Components/Thumb.jsx";
@@ -17,12 +17,17 @@ export default function Index() {
         </div>
 
         <div className="all-thumb">
-            {apartments.map(apartment => <NavLink key={"apartment-" + apartment.id} to='/'>
+            {apartments.map(apartment => <NavLink
+                key={"apartment-" + apartment.id}
+                to={generatePath('/apartment/:id/:name', {
+                    id: apartment.id,
+                    name: apartment.title.toLowerCase().replace(/ /g, '-')
+                })}>
                 <Thumb
                     title={apartment.title}
                     image={apartment.cover}
                     imageAlt={apartment.title}
-                    width="320px" height="320px" />
+                    width="320px" height="320px"/>
             </NavLink>)}
         </div>
     </Layout>
