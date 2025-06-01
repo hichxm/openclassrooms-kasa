@@ -4,12 +4,12 @@
 	flex-direction: column;
 	gap: 1rem;
 
-	.header {
+	.apartment-content-header {
 		display: flex;
 		flex-direction: row;
 		gap: 1rem;
 
-		.left-side {
+		.apartment-content-left-side {
 			width: 70%;
 
 			.content-header {
@@ -34,7 +34,7 @@
 			}
 		}
 
-		.right-side {
+		.apartment-content-right-side {
 			width: 30%;
 			display: flex;
 			flex-direction: column;
@@ -65,7 +65,7 @@
 		}
 	}
 
-	.body {
+	.apartment-content-body {
 		display: flex;
 		flex-direction: row;
 		gap: 2rem;

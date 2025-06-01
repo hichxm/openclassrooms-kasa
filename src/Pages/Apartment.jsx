@@ -16,8 +16,8 @@ export default function Apartment() {
         <Carousel images={apartment.pictures} />
 
         <div className="apartment-content">
-            <div className="header">
-                <div className="left-side">
+            <div className="apartment-content-header">
+                <div className="apartment-content-left-side">
                     <div className="content-header">
                         <h1 className="title">{apartment.title}</h1>
                         <span className="location">{apartment.location}</span>
@@ -27,7 +27,7 @@ export default function Apartment() {
                         {apartment.tags.map(tag => <Tag key={tag}>{tag}</Tag>)}
                     </div>
                 </div>
-                <div className="right-side">
+                <div className="apartment-content-right-side">
                     <div className="profile">
                         <div className="name">
                             {apartment.host.name.split(' ').map((name, index) => <span key={name}>{name}{index === 0 ? <br /> : null}</span>)}
@@ -40,7 +40,7 @@ export default function Apartment() {
                     </div>
                 </div>
             </div>
-            <div className="body">
+            <div className="apartment-content-body">
                 <div className="description">
                     <Dropdown title="Description">
                         {apartment.description}
