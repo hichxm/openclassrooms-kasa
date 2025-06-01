@@ -15,7 +15,7 @@ export default function Dropdown({children, title = 'DROPDOWN_TITLE', open = fal
         <a href="#" onClick={handleClick} className="dropdown-header">
             <span>{title}</span>
             <span>
-                <img src={Close} alt="Fermer"/>
+                <img className={"dropdown-header-icon" + (isOpen ? ' dropdown-header-icon-rotate' : '')} src={Close} alt="Fermer"/>
             </span>
         </a>
         <div className={"dropdown-content" + (isOpen ? ' dropdown-content-open' : '')}>

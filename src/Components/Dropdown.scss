@@ -1,7 +1,7 @@
 .dropdown {
-	background-color: #F6F6F673;
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
 
 	.dropdown-header {
 		box-sizing: border-box;
@@ -16,17 +16,32 @@
 		text-decoration: none;
 		font-weight: bold;
 		font-size: 18px;
+		position: relative;
+		z-index: 99;
+		cursor: pointer;
+
+		.dropdown-header-icon {
+			transition: all 0.3s ease;
+
+			&.dropdown-header-icon-rotate {
+				transform: rotate(-180deg);
+			}
+		}
 	}
-	
+
 	.dropdown-content {
 		margin: 0;
-		padding: 20px;
-		display: none;
+		padding: 0 20px;
+		height: 0;
+		background-color: #F6F6F673;
+		transform: translateY(-100vh);
+		transition: all 0.3s ease;
+		z-index: 1;
 
 		&.dropdown-content-open {
-			display: block;
+			padding: 20px;
+			height: auto;
+			transform: translateY(0);
 		}
-
 	}
-
 }
