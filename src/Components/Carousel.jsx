@@ -31,7 +31,7 @@ export default function Carousel({images = []}) {
 
         let index = currentIndex;
 
-        if(currentIndex <= 0) {
+        if(currentIndex <= -1) {
             index = images.length - 2;
         } else {
             index = index - 1;
