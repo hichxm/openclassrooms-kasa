@@ -24,7 +24,7 @@ export default function Index() {
                     title={apartment.title}
                     image={apartment.cover}
                     imageAlt={apartment.title}
-                    width="320px" height="320px"/>
+                    width="100%" height="340px"/>
             </NavLink>)}
         </div>
     </Layout>
