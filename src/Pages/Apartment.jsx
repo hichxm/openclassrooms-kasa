@@ -42,12 +42,12 @@ export default function Apartment() {
             </div>
             <div className="body">
                 <div className="description">
-                    <Dropdown title="Description" open={true}>
+                    <Dropdown title="Description">
                         {apartment.description}
                     </Dropdown>
                 </div>
                 <div className="equipments">
-                    <Dropdown title="Équipements" open={true}>
+                    <Dropdown title="Équipements">
                         <ul className="list">
                             {apartment.equipments.map(equipment => <li key={equipment}>{equipment}</li>)}
                         </ul>
