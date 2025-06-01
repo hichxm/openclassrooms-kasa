@@ -13,7 +13,7 @@ export default function About() {
         <Banner backgroundImg={AboutBanner} />
 
         <div className="about">
-            {abouts.map(about => <Dropdown key={"about-" + about.id} title={about.title}>
+            {abouts.map((about, index) => <Dropdown key={"about-" + index} title={about.title}>
                 {about.content}
             </Dropdown>)}
         </div>
