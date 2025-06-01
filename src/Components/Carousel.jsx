@@ -17,7 +17,7 @@ export default function Carousel({images = []}) {
 
         let index = currentIndex;
 
-        if(index >= images.length - 2) {
+        if (index >= images.length - 2) {
             index = -1;
         } else {
             index = index + 1;
@@ -31,7 +31,7 @@ export default function Carousel({images = []}) {
 
         let index = currentIndex;
 
-        if(currentIndex <= -1) {
+        if (currentIndex <= -1) {
             index = images.length - 2;
         } else {
             index = index - 1;
@@ -50,7 +50,7 @@ export default function Carousel({images = []}) {
             {images.map((image, index) => <img
                 key={image}
                 src={image}
-                style={{ '--slide': index }}
+                style={{'--slide': index}}
                 className="carousel-slides-slide" alt=""/>)}
         </div>
 

@@ -29,12 +29,24 @@
             position: absolute;
             top: calc(50% - (80px / 2));
             left: 10px;
+
+            @media (max-width: 768px) {
+                & {
+                    transform: scale(0.5);
+                }
+            }
         }
 
         .carousel-arrows-right-arrow {
             position: absolute;
             top: calc(50% - (80px / 2));
             right: 10px;
+
+            @media (max-width: 768px) {
+                & {
+                    transform: scale(0.5);
+                }
+            }
         }
     }
 
@@ -45,5 +57,11 @@
         color: white;
         bottom: 20px;
         left: 50%;
+
+        @media (max-width: 768px) {
+            & {
+                display: none;
+            }
+        }
     }
 }

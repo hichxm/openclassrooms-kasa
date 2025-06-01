@@ -28,5 +28,17 @@
 		color: white;
 		font-size: 48px;
 		font-weight: 700;
+
+		@media (max-width: 768px) {
+			& {
+				font-size: 24px;
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		& {
+			height: 110px;
+		}
 	}
 }

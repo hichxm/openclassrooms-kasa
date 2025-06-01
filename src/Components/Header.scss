@@ -5,11 +5,28 @@
 	align-items: center;
 	padding: 1rem;
 
+	.header-logo {
+		height: 65px;
+
+		@media (max-width: 768px) {
+			& {
+				height: 45px;
+			}
+		}
+	}
+
 	.header-menu {
 		display: flex;
 		flex-direction: row;
 		gap: 2rem;
 		font-size: 24px;
+
+		@media (max-width: 768px) {
+			& {
+				font-size: 12px;
+				gap: 1rem;
+			}
+		}
 
 		.header-menu-item {
 			cursor: pointer;

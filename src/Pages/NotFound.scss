@@ -11,11 +11,24 @@
         font-size: 288px;
         font-weight: bold;
         margin: 0;
+
+        @media (max-width: 768px) {
+            & {
+                font-size: 96px;
+            }
+        }
     }
 
     .not-found-message {
         font-size: 36px;
+        text-align: center;
         margin: 0;
+
+        @media (max-width: 768px) {
+            & {
+                font-size: 18px;
+            }
+        }
     }
 
     .not-found-link {

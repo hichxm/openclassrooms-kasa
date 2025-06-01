@@ -4,8 +4,8 @@ import {NavLink} from "react-router";
 
 export default function Header() {
     return <header className="header">
-        <NavLink to="/" className="header-logo">
-            <img className="image" src={Logo} alt="Kasa logo"/>
+        <NavLink to="/">
+            <img className="header-logo" src={Logo} alt="Kasa logo"/>
         </NavLink>
 
         <div className="header-menu">

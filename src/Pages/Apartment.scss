@@ -9,8 +9,20 @@
 		flex-direction: row;
 		gap: 1rem;
 
+		@media (max-width: 768px) {
+			& {
+				flex-direction: column;
+			}
+		}
+
 		.apartment-content-left-side {
 			width: 70%;
+
+			@media (max-width: 768px) {
+				& {
+					width: 100%;
+				}
+			}
 
 			.content-header {
 				margin-bottom: 1rem;
@@ -29,8 +41,8 @@
 
 			.tags {
 				display: flex;
-				flex-direction: row;
 				gap: 1rem;
+				flex-wrap: wrap;
 			}
 		}
 
@@ -41,6 +53,14 @@
 			justify-content: space-between;
 			gap: 1.5rem;
 			align-items: end;
+
+			@media (max-width: 768px) {
+				& {
+					width: 100%;
+					flex-direction: row-reverse;
+					align-items: center;
+				}
+			}
 
 			.profile {
 				display: flex;
@@ -70,12 +90,30 @@
 		flex-direction: row;
 		gap: 2rem;
 
+		@media (max-width: 768px) {
+			& {
+				flex-direction: column;
+			}
+		}
+
 		.description {
 			width: 50%;
+
+			@media (max-width: 768px) {
+				& {
+					width: 100%;
+				}
+			}
 		}
 
 		.equipments {
 			width: 50%;
+
+			@media (max-width: 768px) {
+				& {
+					width: 100%;
+				}
+			}
 
 			.list {
 				list-style: none;
