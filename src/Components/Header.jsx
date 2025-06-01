@@ -4,13 +4,13 @@ import {NavLink} from "react-router";
 
 export default function Header() {
     return <header className="header">
-        <NavLink to="/" className="logo">
+        <NavLink to="/" className="header-logo">
             <img className="image" src={Logo} alt="Kasa logo"/>
         </NavLink>
 
-        <div className="menu">
-            <NavLink className="item" to="/">Accueil</NavLink>
-            <NavLink className="item" to="/about">A Propos</NavLink>
+        <div className="header-menu">
+            <NavLink className="header-menu-item" to="/">Accueil</NavLink>
+            <NavLink className="header-menu-item" to="/about">A Propos</NavLink>
         </div>
     </header>;
 }

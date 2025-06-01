@@ -46,26 +46,26 @@ export default function Carousel({images = []}) {
 
     return <div className="carousel">
         {/* Carousel */}
-        <div className="slides" ref={slidesRef}>
+        <div className="carousel-slides" ref={slidesRef}>
             {images.map((image, index) => <img
                 key={image}
                 src={image}
                 style={{ '--slide': index }}
-                className="slide" alt=""/>)}
+                className="carousel-slides-slide" alt=""/>)}
         </div>
 
         {/* Arrow */}
-        <div className="arrows">
-            <a href="#" onClick={prevSlide} className="left-arrow">
+        <div className="carousel-arrows">
+            <a href="#" onClick={prevSlide} className="carousel-arrows-left-arrow">
                 <img src={LeftArrow} alt=""/>
             </a>
 
-            <a href="#" onClick={nextSlide} className="right-arrow">
+            <a href="#" onClick={nextSlide} className="carousel-arrows-right-arrow">
                 <img src={RightArrow} alt=""/>
             </a>
         </div>
 
-        <div className="counter">
+        <div className="carousel-counter">
             <span>{currentIndex + 2}/{images.length}</span>
         </div>
     </div>

@@ -8,6 +8,6 @@ export default function Footer() {
         <NavLink to="/">
             <img src={Logo} alt="Kasa logo"/>
         </NavLink>
-        <span className="copyright">© 2020 Kasa. All rights reserved</span>
+        <span className="footer-copyright">© 2020 Kasa. All rights reserved</span>
     </footer>
 }

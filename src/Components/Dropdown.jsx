@@ -12,13 +12,13 @@ export default function Dropdown({children, title = 'DROPDOWN_TITLE', open = fal
     }
 
     return <div className="dropdown">
-        <a href="#" onClick={handleClick} className="header">
+        <a href="#" onClick={handleClick} className="dropdown-header">
             <span>{title}</span>
             <span>
                 <img src={Close} alt="Fermer"/>
             </span>
         </a>
-        <div className={"content" + (isOpen ? ' open' : '')}>
+        <div className={"dropdown-content" + (isOpen ? ' dropdown-content-open' : '')}>
             <div className="inner">
                 {children}
             </div>

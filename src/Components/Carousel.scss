@@ -7,12 +7,12 @@
     overflow: hidden;
     position: relative;
     
-    .slides {
+    .carousel-slides {
         transition: transform 1s ease;
         position: relative;
         height: 100%;
 
-        .slide {
+        .carousel-slides-slide {
             position: absolute;
             height: 100%;
             width: 100%;
@@ -23,22 +23,22 @@
         }
     }
 
-    .arrows {
+    .carousel-arrows {
 
-        .left-arrow {
+        .carousel-arrows-left-arrow {
             position: absolute;
             top: calc(50% - (80px / 2));
             left: 10px;
         }
 
-        .right-arrow {
+        .carousel-arrows-right-arrow {
             position: absolute;
             top: calc(50% - (80px / 2));
             right: 10px;
         }
     }
 
-    .counter {
+    .carousel-counter {
         position: absolute;
         font-size: 18px;
         line-height: 143%;

@@ -3,7 +3,12 @@
 	border-radius: 5px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-	.header {
+	.dropdown-header {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
 		background: #FF6060;
 		border-radius: 5px;
 		padding: 10px 20px 10px 10px;
@@ -13,12 +18,12 @@
 		font-size: 18px;
 	}
 	
-	.content {
+	.dropdown-content {
 		margin: 0;
 		padding: 20px;
 		display: none;
 
-		&.open {
+		&.dropdown-content-open {
 			display: block;
 		}
 
