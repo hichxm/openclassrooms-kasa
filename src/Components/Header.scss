@@ -5,10 +5,6 @@
 	align-items: center;
 	padding: 1rem;
 
-	.logo {
-
-	}
-
 	.menu {
 		display: flex;
 		flex-direction: row;
@@ -20,7 +16,7 @@
 			color: black;
 			text-decoration: none;
 
-			&.active {
+			&.active, &:hover {
 				text-decoration: underline;
 			}
 		}

@@ -1,8 +1,10 @@
 import {createBrowserRouter, RouterProvider} from "react-router";
 import Index from "./Pages/Index.jsx";
-import apartments from './data.json';
 import Apartment from "./Pages/Apartment.jsx";
 import About from "./Pages/About.jsx";
+
+import apartments from './../data/apartments.json';
+import abouts from './../data/abouts.json';
 
 const router = createBrowserRouter([
     {
@@ -26,6 +28,11 @@ const router = createBrowserRouter([
     {
         path: "/about",
         element: <About/>,
+        loader: () => {
+            return {
+                abouts,
+            }
+        }
     }
 ]);
 
