@@ -2,8 +2,8 @@ import Close from './../assets/close.svg';
 import './Dropdown.scss';
 import {useState} from "react";
 
-export default function Dropdown({children, title = 'DROPDOWN_TITLE'}) {
-    const [isOpen, setIsOpen] = useState(false);
+export default function Dropdown({children, title = 'DROPDOWN_TITLE', open = false}) {
+    const [isOpen, setIsOpen] = useState(open);
 
     const handleClick = (e) => {
         e.preventDefault();
