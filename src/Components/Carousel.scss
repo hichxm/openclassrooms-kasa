@@ -1,0 +1,49 @@
+.carousel {
+    width: 100%;
+    height: 420px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    
+    .slides {
+        transition: transform 1s ease;
+        position: relative;
+        height: 100%;
+
+        .slide {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+
+            transform: translateX(calc(100% * var(--slide)));
+        }
+    }
+
+    .arrows {
+
+        .left-arrow {
+            position: absolute;
+            top: calc(50% - (80px / 2));
+            left: 10px;
+        }
+
+        .right-arrow {
+            position: absolute;
+            top: calc(50% - (80px / 2));
+            right: 10px;
+        }
+    }
+
+    .counter {
+        position: absolute;
+        font-size: 18px;
+        line-height: 143%;
+        color: white;
+        bottom: 20px;
+        left: 50%;
+    }
+}
