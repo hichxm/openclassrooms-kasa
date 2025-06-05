@@ -1,4 +1,4 @@
-import {createBrowserRouter, redirect, RouterProvider} from "react-router";
+import {createBrowserRouter, RouterProvider} from "react-router";
 import Index from "./Pages/Index.jsx";
 import Apartment from "./Pages/Apartment.jsx";
 import About from "./Pages/About.jsx";
@@ -6,6 +6,7 @@ import About from "./Pages/About.jsx";
 import apartments from './../data/apartments.json';
 import abouts from './../data/abouts.json';
 import NotFound from "./Pages/NotFound.jsx";
+import {Exception} from "sass";
 
 const router = createBrowserRouter([
     {
@@ -24,13 +25,14 @@ const router = createBrowserRouter([
             const apartment = apartments.find(apartment => apartment.id === params.id);
 
             if(!apartment) {
-                return redirect("/404-not-found", 302);
+                throw new Exception('Apartment not found');
             }
 
             return {
                 apartment,
             }
         },
+        errorElement: <NotFound/>,
     },
     {
         path: "/about",

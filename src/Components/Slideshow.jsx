@@ -1,10 +1,10 @@
 import LeftArrow from './../assets/arrow-left.svg'
 import RightArrow from './../assets/arrow-right.svg'
 
-import './Carousel.scss'
+import './Slideshow.scss'
 import {useEffect, useRef, useState} from "react";
 
-export default function Carousel({images = []}) {
+export default function Slideshow({images = []}) {
     const slidesRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(-1);
 
@@ -44,31 +44,31 @@ export default function Carousel({images = []}) {
         slidesRef.current.style.transform = `translateX(-${(slide + 1) * 100}%)`;
     }
 
-    return <div className="carousel">
+    return <div className="slideshow">
         {/* Carousel */}
-        <div className="carousel-slides" ref={slidesRef}>
+        <div className="slideshow-slides" ref={slidesRef}>
             {images.map((image, index) => <img
                 key={image}
                 src={image}
                 style={{'--slide': index}}
-                className="carousel-slides-slide" alt=""/>)}
+                className="slideshow-slides-slide" alt=""/>)}
         </div>
 
         {/* Arrow */}
         {images.length > 1
-            ? <div className="carousel-arrows">
-                <a href="#" onClick={prevSlide} className="carousel-arrows-left-arrow">
+            ? <div className="slideshow-arrows">
+                <a href="#" onClick={prevSlide} className="slideshow-arrows-left-arrow">
                     <img src={LeftArrow} alt=""/>
                 </a>
 
-                <a href="#" onClick={nextSlide} className="carousel-arrows-right-arrow">
+                <a href="#" onClick={nextSlide} className="slideshow-arrows-right-arrow">
                     <img src={RightArrow} alt=""/>
                 </a>
             </div>
             : ''}
 
         {images.length > 1
-            ? <div className="carousel-counter">
+            ? <div className="slideshow-counter">
                 <span>{currentIndex + 2}/{images.length}</span>
             </div>
             : ''}

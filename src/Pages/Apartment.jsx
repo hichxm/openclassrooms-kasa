@@ -1,7 +1,7 @@
 import {useLoaderData} from "react-router";
 
 import Layout from "../Components/Layout.jsx";
-import Carousel from "../Components/Carousel.jsx";
+import Slideshow from "../Components/Slideshow.jsx";
 
 import Tag from "../Components/Tag.jsx";
 import Stars from "../Components/Stars.jsx";
@@ -13,7 +13,7 @@ export default function Apartment() {
     const {apartment} = useLoaderData();
 
     return <Layout>
-        <Carousel images={apartment.pictures} />
+        <Slideshow images={apartment.pictures} />
 
         <div className="apartment-content">
             <div className="apartment-content-header">
