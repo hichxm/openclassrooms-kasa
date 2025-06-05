@@ -55,18 +55,22 @@ export default function Carousel({images = []}) {
         </div>
 
         {/* Arrow */}
-        <div className="carousel-arrows">
-            <a href="#" onClick={prevSlide} className="carousel-arrows-left-arrow">
-                <img src={LeftArrow} alt=""/>
-            </a>
+        {images.length > 1
+            ? <div className="carousel-arrows">
+                <a href="#" onClick={prevSlide} className="carousel-arrows-left-arrow">
+                    <img src={LeftArrow} alt=""/>
+                </a>
 
-            <a href="#" onClick={nextSlide} className="carousel-arrows-right-arrow">
-                <img src={RightArrow} alt=""/>
-            </a>
-        </div>
+                <a href="#" onClick={nextSlide} className="carousel-arrows-right-arrow">
+                    <img src={RightArrow} alt=""/>
+                </a>
+            </div>
+            : ''}
 
-        <div className="carousel-counter">
-            <span>{currentIndex + 2}/{images.length}</span>
-        </div>
+        {images.length > 1
+            ? <div className="carousel-counter">
+                <span>{currentIndex + 2}/{images.length}</span>
+            </div>
+            : ''}
     </div>
 }
