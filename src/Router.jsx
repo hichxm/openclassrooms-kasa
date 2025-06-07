@@ -47,7 +47,9 @@ const router = createBrowserRouter([
         path: "*",
         element: <NotFound/>,
     },
-]);
+], {
+    basename: '/openclassrooms-kasa/',
+});
 
 export default function Router() {
     return <RouterProvider router={router}/>;
