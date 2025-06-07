@@ -4,7 +4,7 @@ Dans le cadre de ma formation en développement web chez OpenClassrooms, j'ai r�
 
 [Voir la démo en ligne](https://hichxm.github.io/openclassrooms-kasa/)
 
-## Contrainte technique
+## 🎯 Contrainte technique
 
 Le projet devait respecter les contraintes suivantes :
 
@@ -19,16 +19,16 @@ Le projet devait respecter les contraintes suivantes :
 - [x] Utilisation d’**un fichier JSON local** comme source de données simulée
 - [x] **Préparation de l’architecture de l’application** pour l’intégration d’un **futur backend**
 
-### Gestion des données
+### 📦 Gestion des données
 
 Les données affichées dans l’application (logements, information diver, etc.) proviennent d’un fichier JSON local, servant ici de mock API.
 
 Toute l’architecture a été pensée pour faciliter une transition ultérieure vers une API REST réelle, en isolant la logique de récupération et de traitement des données.
 
-## Aperçu
+## 📸 Aperçu
 
 [![Aperçu du projet](./doc/preview.png)](https://hichxm.github.io/openclassrooms-kasa/)
 
-## Maquette
+## 🧩 Maquette
 
 [Accéder à la maquette sur Figma](https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR)
