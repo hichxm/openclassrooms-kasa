@@ -1,12 +1,11 @@
-# React + Vite
+# Kasa - Projet de Refonte Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dans le cadre de ma formation en développement web, j'ai réalisé un projet visant à recréer l'interface front-end d'un site à partir d'une maquette Figma.
 
-Currently, two official plugins are available:
+[Voir la démo en ligne](https://hichxm.github.io/openclassrooms-kasa/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Aperçu du projet](./doc/preview.png)](https://hichxm.github.io/openclassrooms-kasa/)
 
-## Expanding the ESLint configuration
+## Maquette
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Accéder à la maquette sur Figma](https://www.figma.com/design/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR)
