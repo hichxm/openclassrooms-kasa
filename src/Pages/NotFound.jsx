@@ -1,7 +1,8 @@
+import {NavLink} from "react-router";
+
 import Layout from "../Components/Layout.jsx";
 
 import './NotFound.scss';
-import {NavLink} from "react-router";
 
 export default function NotFound() {
     return <Layout>

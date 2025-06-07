@@ -1,12 +1,12 @@
 import {createBrowserRouter, RouterProvider} from "react-router";
+
 import Index from "./Pages/Index.jsx";
 import Apartment from "./Pages/Apartment.jsx";
 import About from "./Pages/About.jsx";
+import NotFound from "./Pages/NotFound.jsx";
 
 import apartments from './../data/apartments.json';
 import abouts from './../data/abouts.json';
-import NotFound from "./Pages/NotFound.jsx";
-import {Exception} from "sass";
 
 const router = createBrowserRouter([
     {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
             const apartment = apartments.find(apartment => apartment.id === params.id);
 
             if(!apartment) {
-                throw new Exception('Apartment not found');
+                throw new Error('Apartment not found');
             }
 
             return {

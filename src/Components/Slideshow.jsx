@@ -1,8 +1,9 @@
+import {useEffect, useRef, useState} from "react";
+
 import LeftArrow from './../assets/arrow-left.svg'
 import RightArrow from './../assets/arrow-right.svg'
 
 import './Slideshow.scss'
-import {useEffect, useRef, useState} from "react";
 
 export default function Slideshow({images = []}) {
     const slidesRef = useRef(null);

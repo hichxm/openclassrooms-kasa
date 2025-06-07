@@ -1,6 +1,8 @@
-import Close from './../assets/close.svg';
-import './Dropdown.scss';
 import {useState} from "react";
+
+import Close from './../assets/close.svg';
+
+import './Dropdown.scss';
 
 export default function Dropdown({children, title = 'DROPDOWN_TITLE', open = false}) {
     const [isOpen, setIsOpen] = useState(open);
@@ -15,7 +17,8 @@ export default function Dropdown({children, title = 'DROPDOWN_TITLE', open = fal
         <a href="#" onClick={handleClick} className="dropdown-header">
             <span>{title}</span>
             <span>
-                <img className={"dropdown-header-icon" + (isOpen ? ' dropdown-header-icon-rotate' : '')} src={Close} alt="Fermer"/>
+                <img className={"dropdown-header-icon" + (isOpen ? ' dropdown-header-icon-rotate' : '')} src={Close}
+                     alt="Fermer"/>
             </span>
         </a>
         <div className={"dropdown-content" + (isOpen ? ' dropdown-content-open' : '')}>

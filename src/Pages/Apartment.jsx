@@ -2,7 +2,6 @@ import {useLoaderData} from "react-router";
 
 import Layout from "../Components/Layout.jsx";
 import Slideshow from "../Components/Slideshow.jsx";
-
 import Tag from "../Components/Tag.jsx";
 import Stars from "../Components/Stars.jsx";
 import Dropdown from "../Components/Dropdown.jsx";
@@ -13,7 +12,7 @@ export default function Apartment() {
     const {apartment} = useLoaderData();
 
     return <Layout>
-        <Slideshow images={apartment.pictures} />
+        <Slideshow images={apartment.pictures}/>
 
         <div className="apartment-content">
             <div className="apartment-content-header">
@@ -30,13 +29,18 @@ export default function Apartment() {
                 <div className="apartment-content-right-side">
                     <div className="profile">
                         <div className="name">
-                            {apartment.host.name.split(' ').map((name, index) => <span key={name}>{name}{index === 0 ? <br /> : null}</span>)}
+                            {apartment.host.name.split(' ').map((name, index) => <span key={name}>
+                                {name}
+                                {index === 0
+                                    ? <br/>
+                                    : null}
+                            </span>)}
                         </div>
 
                         <img className="image" src={apartment.host.picture} alt=""/>
                     </div>
                     <div className="stars">
-                        <Stars totalStars={5} stars={apartment.rating} />
+                        <Stars totalStars={5} stars={apartment.rating}/>
                     </div>
                 </div>
             </div>

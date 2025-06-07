@@ -1,4 +1,5 @@
 import Logo from "../assets/logo_white.svg";
+
 import {NavLink} from "react-router";
 
 import './Footer.scss';
