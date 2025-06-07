@@ -14,7 +14,7 @@ Le projet devait respecter les contraintes suivantes :
 - [x] **Aucune dépendance externe** autre que celles imposées
 - [x] Composants **modulaires et réutilisables**
 - [x] Un composant par fichier
-- [x] Animation obligatoire pour les composants Dropdown et Slideshow
+- [x] Animation obligatoire pour les composants **Dropdown** et **Slideshow**
 - [x] Gestion des **erreurs 404**
 - [x] Utilisation d’**un fichier JSON local** comme source de données simulée
 - [x] **Préparation de l’architecture de l’application** pour l’intégration d’un **futur backend**
