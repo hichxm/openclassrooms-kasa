@@ -25,6 +25,32 @@ Les données affichées dans l’application (logements, information diver, etc.
 
 Toute l’architecture a été pensée pour faciliter une transition ultérieure vers une API REST réelle, en isolant la logique de récupération et de traitement des données.
 
+## 🚀 Installation
+
+### Prérequis
+
+- Node.js (version LTS recommandée)
+- npm (inclus avec Node.js)
+
+### Étapes d'installation
+
+1. Clonez le projet
+    ```bash
+    git clone https://github.com/hichxm/openclassrooms-kasa.git
+    ```
+2. Installer les dépendances
+    ```bash
+    npm install
+    ```
+3. Construire le site
+    ```bash
+    npm run build
+    ```
+4. Lancer le serveur
+   ```bash
+   npm run preview
+   ```
+   
 ## 📸 Aperçu
 
 [![Aperçu du projet](./doc/preview.png)](https://hichxm.github.io/openclassrooms-kasa/)
